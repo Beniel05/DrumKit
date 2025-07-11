@@ -1,27 +1,61 @@
-*{
+html,
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
-}
-body{
-  background: linear-gradient(#743296, #DC52BF);
-  height: 100vh;
-}
-h1{
-  text-align: center;
-  margin-top: 2%;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  font-family: poppins, Arial, Helvetica, sans-serif;
-}
-.container{
-  margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #8e2de2, #ff6ec4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-button{
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+hr {
+  width: 100vh;
+}
+
+body>.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}
+
+button {
   text-transform: uppercase;
   padding: 65px 75px;
   margin: 20px;
@@ -30,37 +64,38 @@ button{
   color: white;
   font-size: x-large;
 }
-.a{
+
+.a {
   background-image: url(./assets/Images/tom1.png);
 }
-.s{
+
+.s {
   background-image: url(./assets/Images/tom2.png);
 }
-.d{
+
+.d {
   background-image: url(./assets/Images/tom3.png);
   border: 2px solid black;
 }
-.f{
+
+.f {
   background-image: url(./assets/Images/tom4.png);
   border: 2px solid black;
 }
-.j{
+
+.j {
   background-image: url(./assets/Images/snare.png);
   border: 2px solid black;
   color: black;
 }
-.k{
+
+.k {
   background-image: url(./assets/Images/kick.png);
   border: 2px solid black;
 }
-.l{
+
+.l {
   background-image: url(./assets/Images/crash.png);
   border: 2px solid black;
   color: black;
-}
-footer{
-  padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  text-align: center;
 }
